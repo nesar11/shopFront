@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-auto mr-auto"></div>
+  <div class="nav-link" routerLink="/addProduct" class="col-auto btn btn-primary pull-left mt-2">Add Prodcut</div>
+</div>
+
+<div class="row mt-2">
+  <div class="col-md-4 mb-3" *ngFor="let product of products">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{product.productName}}</h5>
+        <p class="card-text">{{product.productDes}}</p>
+        <p class="card-text">{{product.image}}</p>
+        <a href="#" class="btn btn-primary">Buy Tickets</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{product.createdAt | date:'shortDate'}} 
+        
+        <span style=" padding:10px"><i class="fas fa-edit fa-1x"></i> </span> <i class="far fa-trash-alt fa-1x"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div>
+  <button (click)="previousPage(0)"> 
+    Back
+  </button>
+  <button (click)="getPage(1)"> 
+    1
+  </button>
+  <button (click)="getPage(2)"> 
+    2
+  </button>
+  <button (click)="getPage(3)"> 
+    3
+  </button>
+  
+  <button (click)="nextPage()"> 
+    Next
+  </button>
+</div>
+

@@ -1,0 +1,12 @@
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: turquoise;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #28a745;
+}

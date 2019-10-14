@@ -1,0 +1,8 @@
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background:rgba(0, 123, 255, 0.38);
+ 
+    color: #343a40;
+}

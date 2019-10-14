@@ -1,0 +1,21 @@
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name </td>
+        <td>Email</td>
+        <td colspan="2">Actions</td>
+    </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{ user.email }}</td>
+            <td> <span style=" padding:10px"><i class="fas fa-edit fa-1x"></i> </span> <i class="far fa-trash-alt fa-1x"></i></td>
+            
+        </tr>
+    </tbody>
+  </table>
